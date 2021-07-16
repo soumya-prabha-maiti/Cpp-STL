@@ -47,7 +47,18 @@ int main()
     cout<<"Size="<<v.size()<<endl;
 
     // Copying a vector
-    vector<int> newv(v);
+    vector<int> a={1,2,3,4};
+    // vector is passed as value , not reference, so changes to a does not affect aAssign
+    vector<int> aAssign=a;
+    vector<int> aCopy(a);
+    a.push_back(5);
+
+    for(int i:aAssign)
+        cout<<i<<" ";//1 2 3 4 
+    cout<<endl;
+
+    for(int i:aCopy)
+        cout<<i<<" ";//1 2 3 4
 
     return 0;
 }

@@ -42,7 +42,7 @@ int main()
     cout << "\n\nBefore sort : ";//24512
     for (int i : v)
         cout << i << " ";
-    sort(v.begin(),v.end());
+    sort(v.begin(),v.end(),/*comparatorfn*/);
     cout << "\nAfter sort : ";//12245
     for (int i : v)
         cout << i << " ";
